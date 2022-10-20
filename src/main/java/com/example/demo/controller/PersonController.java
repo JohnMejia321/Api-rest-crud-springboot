@@ -29,8 +29,8 @@ public class PersonController {
         return personRepository.save(person);
     }
 
-    @PutMapping("/person/{idPersona}")
-    public Person updatePerson(@PathVariable long idPersona ,@RequestBody Person person) {
+    @PutMapping("/person")
+    public Person updatePerson(@RequestBody Person person) {
         return personRepository.save(person);
     }
 
