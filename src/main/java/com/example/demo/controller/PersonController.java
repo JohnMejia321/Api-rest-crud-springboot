@@ -24,4 +24,9 @@ public class PersonController {
         personRepository.deleteById(idPersona);
     }
 
+    @PostMapping("/person")
+    public Person createPerson(@RequestBody Person person) {
+        return personRepository.save(person);
+    }
+
 }
